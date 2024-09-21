@@ -17,6 +17,9 @@ jobs:
     - name: Set up Terraform
       uses: hashicorp/setup-terraform@v1
 
+    - name: Change directory to terraform folder
+      run: cd /env/prod
+
     - name: Terraform Init
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
