@@ -1,4 +1,4 @@
-name: Terraform Deploy
+name: Deploy release for AWS and Commit to Main
 
 on:
   push:
